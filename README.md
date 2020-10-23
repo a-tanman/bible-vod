@@ -1,6 +1,6 @@
-# bible-vod
+# BibleVOTD
 
-bible-vod is an extension that displays the Bible Gateway Verse of the Day (VOTD) on VS code startup, or when triggered by a command. This redirects to BibleGateway.com, but is in no way affiliated with BibleGateway.
+BibleVOTD is an extension that displays the Bible Gateway Verse of the Day (VOTD) on VS code startup, or when triggered by a command. This redirects to BibleGateway.com, but is in no way affiliated with BibleGateway.
 
 ## Features
 
@@ -20,12 +20,18 @@ There are currently no settings but there is the intention to enable configuring
 
 ## Release Notes
 
+### 0.0.3
+
+- Changed extension name to BibleVOTD
+- Updated minimum VS code version
+- Added repository link
+
 ### 0.0.2
 
-Updated links to GIFs demonstrating features
+- Updated links to GIFs demonstrating features
 
 ### 0.0.1
 
-Initial release of bible-vod
+- Initial release of bible-vod
 
 **Enjoy!**
