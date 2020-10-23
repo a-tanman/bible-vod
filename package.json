@@ -2,7 +2,7 @@
   "name": "bible-vod",
   "displayName": "BibleVOTD",
   "description": "Bible Verse Of The Day for VS Code",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "bible-vod",
   "engines": {
     "vscode": "^1.0.0"
