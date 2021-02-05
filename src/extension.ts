@@ -1,7 +1,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
-import axios from 'axios';
+import axios, { AxiosResponse } from 'axios';
 
 // Get JSON of vod from below URL
 async function getVod(): Promise<void> {
@@ -16,7 +16,7 @@ async function getVod(): Promise<void> {
       }
     });
 
-    vscode.window.showInformationMessage('VOTD: ' + res.data.votd.content + ' (' + res.data.votd.reference + ')',
+    vscode.window.showInformationMessage(parseVodString(res.data.votd.content, res.data.votd.reference),
     'Show Full Chapter').then(selection => {
       if (selection === 'Show Full Chapter') {
 
@@ -29,6 +29,11 @@ async function getVod(): Promise<void> {
   } catch (err) {
     console.log(err);
   }
+}
+
+// Parse JSON response
+export function parseVodString(content: string, reference: string): string {
+    return 'VOTD: ' + content.replace(/<[^>]+>/g, '') + ' (' + reference + ')';
 }
 
 // this method is called when your extension is activated

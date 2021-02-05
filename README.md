@@ -20,18 +20,6 @@ There are currently no settings but there is the intention to enable configuring
 
 ## Release Notes
 
-### 0.0.3
-
-- Changed extension name to BibleVOTD
-- Updated minimum VS code version
-- Added repository link
-
-### 0.0.2
-
-- Updated links to GIFs demonstrating features
-
-### 0.0.1
-
-- Initial release of bible-vod
+See [CHANGELOG](CHANGELOG.md)
 
 **Enjoy!**
